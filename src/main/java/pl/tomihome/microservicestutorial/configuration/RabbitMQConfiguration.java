@@ -8,8 +8,11 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+//konfiguracja message brokerarabbitMQ
+
 @Configuration
 public class RabbitMQConfiguration {
+
 
 
     //multiplication.exchange - nazwa topic'a z propertasow

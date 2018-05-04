@@ -43,7 +43,7 @@ public class MultiplicationServiceImpl implements MultiplicationService {
         return new Multiplication(factoryA, factoryB);
     }
 
-    @Transactional //?
+    @Transactional //zapobiega wyslaniu eventu jesli wystapi wyjatek
     @Override
     public boolean checkAttempt(MultiplicationResultAttempt attempt) {
         log.info("select for user");
